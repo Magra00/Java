@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class JuegoAdivinarOperacion {
+    public static void main(String [] args){
+        Scanner entrada=new Scanner(System.in);
+	int numero_1, numero_2, resultado;
+	System.out.println ("ingresa un numero");
+	numero_1=entrada.nextInt();
+	System.out.println(numero_1);
+	System.out.println ("ingresa un numero");
+	numero_2=entrada.nextInt();
+	System.out.println(numero_2);
+	System.out.println(numero_1 + "*" + numero_2 + "=");
+	resultado = entrada.nextInt();
+	System.out.println("resultado correcto? " + (numero_1 * numero_2==resultado));
+ }
+}
